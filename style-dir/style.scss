@@ -26,6 +26,7 @@ nav
 
 li
 {
+    text-transform: uppercase;
     margin: 0 1rem;
     transition: color 200ms ease-in-out;
 }
@@ -46,17 +47,17 @@ li:hover
 
 #header-cta
 {
-    background: #f2f2f2;
-    color: #555;
-    padding: 10px 20px;
+    background: hsl(210, 51%, 46%);
+    color: #fff;
+    padding: 10px 40px;
     border-radius: 34px;
     transition: all 200ms ease-in-out;
 }
 
 #header-cta:hover
 {
-    background: #888;
-    color: #fff;
+    background: hsl(210, 51%, 66%);
+    color: #111;
 }
 
 .text-container {
@@ -101,8 +102,8 @@ header > p
 
 
     @media screen and (max-width: 850px) {
-        width: 180px;
-        height: 100px;
+        width: 200px;
+        height: 150px;
         margin-top: 4rem;
         object-fit: contain;
     }
@@ -116,24 +117,41 @@ li, button
 
 button
 {
-    background-color: transparent;
+    background-color: #f0f0f0;
     color: #111;
-    padding: 10px 20px;
-    border: 1px solid #111;
+    padding: 10px 60px;
     border-radius: 5px;
     transition: background-color 200ms ease-in-out; 
 }
 
 button:hover
 {
-    background-color: #555;
-    color: hsl(209, 42%, 91%);
+    background-color: #ccc;
+    color: hsl(0, 0%, 100%);
 }
 
 .volunteer
 {
     padding:4rem;
+    padding-top: 14rem;
 }
+
+#mission-co {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+#mission {
+    background: rgba(0, 0, 0, .5);
+    color: #f2f2f2;
+    padding: 3rem 2rem;
+    width: 23%;
+}
+
+
 
 footer
 {
@@ -244,11 +262,23 @@ footer > p
         padding: 0 2rem;
     }
 
+    .volunteer {
+        padding-top: unset;
+    }
+
+    #mission-co {
+        display: block;
+    }
+
+    #mission {
+        width: calc(100vw - 40%);
+        margin: 2rem auto;
+    }
+
     .text-container
     {
         transform: translateY(-6rem);
     }
-
     .classes
     {
         transform: translateY(-4rem);

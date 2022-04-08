@@ -69,6 +69,7 @@ nav {
 }
 
 li {
+  text-transform: uppercase;
   margin: 0 1rem;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
@@ -88,17 +89,17 @@ li:hover {
 }
 
 #header-cta {
-  background: #f2f2f2;
-  color: #555;
-  padding: 10px 20px;
+  background: #3975b1;
+  color: #fff;
+  padding: 10px 40px;
   border-radius: 34px;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
 #header-cta:hover {
-  background: #888;
-  color: #fff;
+  background: #7ca8d5;
+  color: #111;
 }
 
 .text-container {
@@ -145,8 +146,8 @@ header > p {
 
 @media screen and (max-width: 850px) {
   .box > img {
-    width: 180px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     margin-top: 4rem;
     -o-object-fit: contain;
        object-fit: contain;
@@ -159,22 +160,43 @@ li, button {
 }
 
 button {
-  background-color: transparent;
+  background-color: #f0f0f0;
   color: #111;
-  padding: 10px 20px;
-  border: 1px solid #111;
+  padding: 10px 60px;
   border-radius: 5px;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
 }
 
 button:hover {
-  background-color: #555;
-  color: #dee8f2;
+  background-color: #ccc;
+  color: white;
 }
 
 .volunteer {
   padding: 4rem;
+  padding-top: 14rem;
+}
+
+#mission-co {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8rem 0;
+}
+
+#mission {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f2f2f2;
+  padding: 3rem 2rem;
+  width: 23%;
 }
 
 footer {
@@ -271,6 +293,16 @@ footer > p {
   p {
     font-size: 0.624rem;
     padding: 0 2rem;
+  }
+  .volunteer {
+    padding-top: unset;
+  }
+  #mission-co {
+    display: block;
+  }
+  #mission {
+    width: calc(100vw - 40%);
+    margin: 2rem auto;
   }
   .text-container {
     -webkit-transform: translateY(-6rem);
